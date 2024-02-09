@@ -1,0 +1,218 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+
+} */
+.box{
+    position:relative ;
+    width: 400px;
+    height: 450px;
+    background: #1c1c1c;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box::before
+{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 420px;
+    top: -50%;
+    left: -50px;
+    background: linear-gradient(0deg,transparent,transparent,#FFF,#FFF,#FFF);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite ;
+}
+.box::after
+{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 420px;
+    top: -50%;
+    left: -50px;
+    background: linear-gradient(0deg,transparent,transparent,#FFF,#FFF,#FFF);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite ;
+    animation-delay: -3s;
+}
+.borderline{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderline::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 420px;
+    top: -50%;
+    left: -50px;
+    background: linear-gradient(0deg,transparent,transparent,red,red,red);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite ;
+    animation-delay: -1.5s;
+}
+.borderline::after
+{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 420px;
+    top: -50%;
+    left: -50px;
+    background: linear-gradient(0deg,transparent,transparent,red,red,red);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite ;
+    animation-delay: -4.5s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box form{
+    position: absolute;
+    inset: 5px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.box form h2{
+    color: red;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.box form h2:hover{
+    color: #CBFF00;
+}
+
+.inputbox{
+    position: relative;
+    width: 300px;
+    margin-top:35px ;
+
+}
+
+.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span
+{
+color: white;
+font-size: 0.75em;
+transform: translateY(-35px);
+
+}
+.inputbox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(50, 93, 93, 0.595);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i
+{
+    height: 45px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.links a{
+    margin: 15px auto;
+    font-size: 0.80em;
+    color: #8f8f8f;
+    text-decoration: none;
+    
+}
+.links a:hover,
+.links a:nth-child(2)
+
+{
+    color: #CBFF00;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.box form input[type="submit"]
+{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 9px 20px;
+    background: white;
+    width: 97%;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.box form input[type="submit"]:hover{
+    color: black;
+    background-color: #CBFF00;
+    letter-spacing: 0.080em;
+    transition: 0.5s;
+    
+
+}

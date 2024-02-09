@@ -1,0 +1,22 @@
+/* button{
+
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 5px;
+    /* background-color: red; */
+
+/* button:hover{
+    background-color:black;
+    color: white;
+    border: none;
+} */
+.bottona{
+color: #fff;
+}
+.bottona:hover{
+    background-color: #fff;
+    /* border: #CBFF00 2px solid; */
+    transition: 0.5s;
+    color: black;
+}

@@ -1,0 +1,28 @@
+.service{
+    background-color: #000;
+}
+.botton{
+    /* background-color: #CBFF00; */
+    padding: 5px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #000;
+}
+.botton:hover{
+    background-color: #FFF;
+    color: black;
+    /* border: #CBFF00 2px solid; */
+    transition: 0.5s;
+}
+.boy{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cart{
+    /* background-color: #CBFF00; */
+    /* border: 2px solid black; */
+    
+}
+.cart:hover{
+   
+}

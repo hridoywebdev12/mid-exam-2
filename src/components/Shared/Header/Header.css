@@ -1,0 +1,43 @@
+.logo img {
+width: 120px;
+cursor: pointer;
+}
+.serch{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.email p{
+    background-color:#FFF;
+    width: 100%;
+    height: 1px;
+}
+.icon1{
+    display: flex;
+    align-items: center;
+    
+}
+.fabicona:hover{
+    /* background-color: #191919; */
+    color: #0866FF;
+   
+    transition: 0.5s;
+}
+.fabiconay:hover{
+    /* background-color: #191919; */
+    color: red;
+   
+    transition: 0.5s;
+}
+.fabiconai:hover{
+    /* background-color: #191919; */
+    color: rgba(255, 38, 0, 0.934);
+   
+    transition: 0.5s;
+}
+.fabiconal:hover{
+    /* background-color: #191919; */
+    color: #0A66C2;
+   
+    transition: 0.5s;
+}
